@@ -1,0 +1,15 @@
+.carrosselFilmes{
+    width: 100%;
+    height: max-content;
+    padding: 30px 0;
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: initial;
+    align-items: center;
+}
+
+.carrosselFilmes::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,18 @@
+.titulo{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.titulo h2{
+    font-size: 1.8em;
+
+}
+
+.titulo aside{
+    width: 150px;
+    height: 4px;
+    background-color: #AEAEAE;
+    border-radius: 10px 0px 10px 0;
+}

@@ -1,0 +1,79 @@
+.cabecalho{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    box-shadow: 5px 5px 5px 5px #00000066;
+}
+
+.cabecalho div{
+   display: flex;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   gap: 80px;
+   font-size: 0.95em;
+}
+
+.cabecalho div a{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #c6c6c6;
+    transition: 0.4s all;
+}
+
+.cabecalho div a:hover{
+
+    transform: translatey(-2%);
+    color: #fff;
+
+}
+
+.cabecalho img{
+    height: 70px;
+
+}
+
+.cabecalho .busca{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.busca .input-busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+}
+
+.input-busca input{
+    outline: none;
+    border: none;
+    height: 40%;
+    width: 100%;
+    border-radius: 18px 0 0 18px;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.837);
+}
+
+
+.input-busca div{
+    background-color: #3c5a75;
+    width: 60px;
+    height: 40%;
+    border-radius: 0 18px 18px 0;
+}
+
+.input-busca div svg{
+    color: #fefefe;
+}

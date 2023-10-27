@@ -1,0 +1,14 @@
+.carrossel-principal {
+  width: 100%;
+  min-width: 100% ;
+  height: max-content;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.carrossel-principal::-webkit-scrollbar{
+    display: none;
+}
