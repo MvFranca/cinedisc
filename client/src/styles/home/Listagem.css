@@ -6,10 +6,10 @@
     flex-direction: column;
 }
 
-.titulo{
+.listagem .titulo{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
 }
 
 .listagem div h2{
@@ -46,4 +46,31 @@
 .escolha div p{
     font-weight: bold;
 
+}
+
+@media screen and (max-width: 1060px) {
+    .listagem{
+        margin-top: 40px;
+        padding: 0 20px;  
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .listagem div h2{
+        font-size: 1.3em;
+    }
+
+    .listagem div p{
+        font-size: 0.8em;
+       
+    }
+
+    .escolha div{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }

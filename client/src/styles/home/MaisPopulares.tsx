@@ -11,6 +11,7 @@ interface Teste {
   poster_path: string;
   title: string;
   vote_average: string;
+  id: string;
 }
 
 
@@ -44,6 +45,7 @@ const MaisPopulares = () => {
               poster_path={filme.poster_path}
               title={filme.title}
               vote_average={filme.vote_average}
+              id={filme.id}
             />
           ))}
       </CarrosselFilmes>

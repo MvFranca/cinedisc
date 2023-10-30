@@ -11,6 +11,7 @@ interface Teste {
   poster_path: string;
   title: string;
   vote_average: string;
+  id: string;
 }
 
 const MelhoresAvaliados = () => {
@@ -24,6 +25,7 @@ const MelhoresAvaliados = () => {
 
   useEffect(() => {
     const urlFull = `${moviesURL}top_rated?${apiKey}&language=pt-BR`;
+    console.log(urlFull)
 
     conteudo(urlFull);
   }, []);
@@ -40,6 +42,7 @@ const MelhoresAvaliados = () => {
               poster_path={filme.poster_path}
               title={filme.title}
               vote_average={filme.vote_average}
+              id = {filme.id}
             />
           ))}
       </CarrosselFilmes>

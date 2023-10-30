@@ -5,20 +5,21 @@ import "../../styles/home/CardFilme.css";
 
 
 
-const imageUrl = import.meta.env.VITE_IMG
+const imageUrl = import.meta.env.VITE_IMG   
 
 type props = {
   poster_path: string;
   title: string;
   vote_average: string;
-}
+  id: string;
+} 
 
-const CardFilme = ({vote_average, poster_path, title}: props) => {
+const CardFilme = ({vote_average, poster_path, title, id}: props) => {
 
 
 
   return (
-    <div className="card-filme">
+    <a href={`/${id}`} className="card-filme">
       <img src={imageUrl + poster_path} alt={title} />
 
       <div className="inform-filme">
@@ -31,7 +32,7 @@ const CardFilme = ({vote_average, poster_path, title}: props) => {
           <IconIconBookmark width={20} height={23} />
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

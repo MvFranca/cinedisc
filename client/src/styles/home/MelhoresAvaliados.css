@@ -1,6 +1,13 @@
-.melhores-avaliados{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 80px;
-    height: max-content;
+.melhores-avaliados {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px;
+  height: max-content;
+  width: 100%;
+}
+
+@media screen and (max-width: 1060px) {
+  .melhores-avaliados {
+  padding: 30px 20px;
+}
 }

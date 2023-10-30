@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@900&family=Roboto:wght@900&family=Source+Sans+3:wght@700&display=swap");
+
+.movie-page {
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.movie-page .capa {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.movie-page .infos-filme {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #1a242e 3%, #1a242eae, #1a242e3a);
+}
+
+.movie-page div img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 10px #1a242e2b;
+}
+
+.movie-page .imagem-menor {
+  width: 230px;
+}
+
+.movie-page .descricao-filme {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-page .especificacoes {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.movie-page .especificacoes span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie-page .descricao-filme h2,
+.movie-page .descricao-filme h3 {
+  font-size: 2.35em;
+  font-family: "Roboto", sans-serif;
+}
+
+.movie-page .descricao-filme h3 {
+  font-size: 1.4em;
+}
+
+.movie-page p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.98em;
+}
+
+.onde-assistir {
+  width: 100%;
+  height: 100px;
+}
+
+@media screen and (max-width: 850px) {
+  .movie-page .imagem-menor {
+    display: none;
+  }
+  .movie-page .infos-filme {
+    justify-content: initial;
+    align-items: end;
+    padding: 30px;
+  }
+
+  .movie-page .descricao-filme {
+    width: 90%;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+
+  .movie-page .descricao-filme h2,
+  .movie-page .descricao-filme h3 {
+    font-size: 1.8em;
+  }
+
+  .movie-page .descricao-filme h3 {
+    font-size: 1.2em;
+    color: #75abda;
+  }
+
+  .movie-page p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.92em;
+    color: #75abda;
+  }
+
+  .movie-page .especificacoes .pontos{
+    display: none;
+  }
+
+  .movie-page .especificacoes {
+    flex-direction: column;
+    align-items: initial;
+    gap: 5px;
+    font-size: 0.94em;
+    margin-top: 0;
+  }
+}

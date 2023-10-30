@@ -6,8 +6,8 @@ function IconSettings(props: React.SVGProps<SVGSVGElement>) {
     <svg
       viewBox="0 0 512 512"
       fill="currentColor"
-      height="1em"
-      width="1em"
+      height="2.2em"
+      width="2.2em"
       {...props}
     >
       <path d="M304 256 A48 48 0 0 1 256 304 A48 48 0 0 1 208 256 A48 48 0 0 1 304 256 z" />

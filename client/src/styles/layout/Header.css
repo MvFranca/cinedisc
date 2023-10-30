@@ -1,79 +1,139 @@
-.cabecalho{
-    width: 100%;
-    height: 85px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-    box-shadow: 5px 5px 5px 5px #00000066;
+.cabecalho {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-shadow: 5px 5px 5px 5px #00000066;
 }
 
-.cabecalho div{
-   display: flex;
-   height: 100%;
-   justify-content: center;
-   align-items: center;
-   gap: 80px;
-   font-size: 0.95em;
+.cabecalho div, .cabecalho nav {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-size: 0.95em;
 }
 
-.cabecalho div a{
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    color: #c6c6c6;
-    transition: 0.4s all;
+.cabecalho div a, .cabecalho nav a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #c6c6c6;
+  transition: 0.4s all;
 }
 
-.cabecalho div a:hover{
-
-    transform: translatey(-2%);
-    color: #fff;
-
+.cabecalho div a:hover {
+  transform: translatey(-2%);
+  color: #fff;
+  cursor: pointer;
 }
 
-.cabecalho img{
-    height: 70px;
-
+.cabecalho img {
+  height: 70px;
 }
 
-.cabecalho .busca{
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-
+.cabecalho .busca {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-.busca .input-busca{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    width: 100%;
+.busca .input-busca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  height: 90px;
 }
 
-.input-busca input{
-    outline: none;
-    border: none;
-    height: 40%;
-    width: 100%;
-    border-radius: 18px 0 0 18px;
-    padding: 0 20px;
-    background-color: rgba(255, 255, 255, 0.837);
+.input-busca input {
+  outline: none;
+  border: none;
+  height: 40%;
+  width: 100%;
+  border-radius: 18px 0 0 18px;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.837);
 }
 
-
-.input-busca div{
-    background-color: #3c5a75;
-    width: 60px;
-    height: 40%;
-    border-radius: 0 18px 18px 0;
+.input-busca button {
+  background-color: #3c5a75;
+  width: 60px;
+  height: 40%;
+  border-radius: 0 18px 18px 0;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.input-busca div svg{
-    color: #fefefe;
+.input-busca button svg {
+  color: #fefefe;
 }
+
+.cabecalho .icon-menu{
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+
+    .cabecalho .busca{
+        width: 15%;
+        gap: 0;
+    }
+
+    .input-busca input {
+    display: none;
+  }
+
+  .input-busca button{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 950px) {
+
+  .cabecalho{
+    padding: 0px 20px;
+  }
+
+  .cabecalho nav {
+    gap: 25px;
+  }
+
+ .cabecalho .links-header{
+    display: none;
+ }
+
+ .cabecalho .icon-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #3C5A75;
+ }
+
+
+ .cabecalho .busca{
+  width:max-content;
+  gap: 25px;
+}
+
+ .cabecalho .icone-config{
+  min-width: 1.8em;
+ }
+}
+

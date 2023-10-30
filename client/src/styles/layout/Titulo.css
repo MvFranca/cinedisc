@@ -16,3 +16,11 @@
     background-color: #AEAEAE;
     border-radius: 10px 0px 10px 0;
 }
+
+@media screen and (max-width: 800px) {
+    
+.titulo h2{
+    font-size: 1.5em;
+
+}
+}
