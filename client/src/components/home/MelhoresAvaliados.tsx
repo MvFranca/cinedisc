@@ -25,7 +25,6 @@ const MelhoresAvaliados = () => {
 
   useEffect(() => {
     const urlFull = `${moviesURL}top_rated?${apiKey}&language=pt-BR`;
-    console.log(urlFull)
 
     conteudo(urlFull);
   }, []);

@@ -3,7 +3,7 @@
   background-color: #1A242E;
   font-family: 'Inter', Arial, sans-serif;
   color: #fff;
-  min-height: 100%;
+  min-height: 80vh;
   width: 100%;
   scroll-behavior: smooth;
 }

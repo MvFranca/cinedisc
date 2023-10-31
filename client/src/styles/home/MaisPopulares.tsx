@@ -31,7 +31,6 @@ const MaisPopulares = () => {
     conteudo(urlFull);
   }, []);
 
-  console.log(popMovies);
 
   return (
     <div className="melhores-avaliados">

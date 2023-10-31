@@ -8,13 +8,15 @@ const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 //const imageUrl = import.meta.env.VITE_IMG;
 
-interface Teste {
+interface typeObject {
   poster_path: string;
   title: string;
   vote_average: string;
   id: string;
   budget: string;
   revenue: string;
+  overview: string;
+  backdrop_path: string;
 }
 
 interface TypesCategorias {
@@ -23,7 +25,7 @@ interface TypesCategorias {
 }
 
 const Movie = () => {
-  const [movie, setMovie] = useState<Object<Teste>>({});
+  const [movie, setMovie] = useState<typeObject>();
   const [categorias, setCategorias] = useState<Array<TypesCategorias>>([]);
 
   const { id } = useParams();
@@ -38,6 +40,7 @@ const Movie = () => {
   useEffect(() => {
     const url = `${moviesURL}${id}?${apiKey}&language=pt-BR`;
     conteudo(url);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   console.log(movie);
 

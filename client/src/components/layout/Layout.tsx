@@ -1,13 +1,14 @@
 import { PropsWithChildren } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import '../../styles/layout/layout.css'
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <Header />
-      {children}
-      <Footer/>
+      <main className="mainContainer">{children}</main>
+      <Footer />
     </>
   );
 };
