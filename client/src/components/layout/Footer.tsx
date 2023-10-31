@@ -3,7 +3,7 @@ import '../../styles/layout/Footer.css'
 const Footer = () => {
     return ( 
         <div className='footer'>
-          <p>Desenvolvido por Marcos Vinicius | Todos os Direitos Reservados | API Tmdb</p>
+          <p>Marcos Vinicius © 2023 | Todos os Direitos Reservados | API Tmdb</p>
         </div>
      );
 }
