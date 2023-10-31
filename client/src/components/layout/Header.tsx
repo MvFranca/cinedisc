@@ -1,31 +1,48 @@
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import IconHeart from "../../icons/IconHeart";
 import IconMenu from "../../icons/IconMenu";
 
 import Icon135Search from "../../icons/IconSearch";
 import IconSettings from "../../icons/IconSettings";
 import "../../styles/layout/Header.css";
+import HeaderMobile from "./HeaderMobile";
+import InputMobile from "./InputMobile";
 
 const Header = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
+  const [menu, setMenu] = useState(false);
+  const [input, setInput] = useState(false);
 
   function handleSubmit() {
-    event?.preventDefault()
+    event?.preventDefault();
 
-    if(!search) return alert("Digite algo para pesquisar")
-
-
+    if (!search) return
   }
+
+  useEffect(() => {
+    if(input) setMenu(false)
+
+  }, [input])
+
+  useEffect(() => {
+    if(menu) setInput(false)
+
+  }, [menu])
+
 
   return (
     <header className="cabecalho">
-      <nav>
+      <nav className="nav-desktop">
         <a href="/">
           <img src="logo-cinedisc.png" alt="Logo CineDisc" />
         </a>
 
-        <div className="icon-menu">
+        <div
+          className="icon-menu"
+          onClick={() => {
+            setMenu(!menu);
+          }}
+        >
           <IconMenu />
         </div>
 
@@ -43,16 +60,24 @@ const Header = () => {
           <input
             type="text"
             placeholder="Digite o nome de algum filme para buscar"
+            className="input-desktop"
             value={search}
-            onChange={ (e) => setSearch(e.currentTarget.value) }
+            onChange={(e) => setSearch(e.currentTarget.value)}
           />
-          <button>
+
+          {input && <InputMobile />}
+          <button
+            onClick={() => {
+              setInput(!input);
+            }}
+          >
             <Icon135Search width={20} height={20} color="#fff" />
           </button>
         </form>
 
         <IconSettings color="#aeaeae" className="icone-config" />
       </div>
+      {menu && <HeaderMobile />}
     </header>
   );
 };

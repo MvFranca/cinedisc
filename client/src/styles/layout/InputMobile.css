@@ -1,0 +1,31 @@
+.input-busca .input-mobile {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+  position: absolute;
+  top: 68px;
+  right: 80px;
+}
+
+.input-busca .input-mobile input {
+  width: 180px;
+  height: 45px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  background-color: #3c5a75;
+  color: #fff;
+}
+
+.input-busca .input-mobile input::placeholder {
+  color: #ffffffb2;
+}
+@media screen and (min-width: 950px) {
+  .input-busca .input-mobile {
+    display: none;
+  }
+}
