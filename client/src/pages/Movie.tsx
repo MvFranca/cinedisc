@@ -13,6 +13,8 @@ interface Teste {
   title: string;
   vote_average: string;
   id: string;
+  budget: string;
+  revenue: string;
 }
 
 interface TypesCategorias {
@@ -67,9 +69,14 @@ const Movie = () => {
                 <span className="pontos">•</span>
 
                 <span>
-                  <h4>Lançamento: 01/01/2024</h4>
+                  <h4>Orçamento:</h4>
+                  <span>US$ {movie.budget}</span>
                 </span>
-                <span  className="pontos">•</span>
+                <span>
+                  <h4>Receita:</h4>
+                  <span>US$ {movie.revenue}</span>
+                </span>
+                <span className="pontos">•</span>
                 <span>
                   <IconStar color="yellow" />
                   {movie.vote_average}
@@ -83,17 +90,16 @@ const Movie = () => {
             </div>
           </div>
 
-          <img
-            src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
-            alt=""
-          />
+          <div className="teste">
+            <img
+              src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+              alt=""
+            />
+          </div>
         </div>
       ) : (
         <p>carregando...</p>
       )}
-      <div className="onde-assistir">
-        <h2>Onde Assistir</h2>
-      </div>
     </div>
   );
 };
