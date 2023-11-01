@@ -16,8 +16,10 @@ const apiKey = import.meta.env.VITE_API_KEY;
 const Carrossel = () => {
   const [newMovies, setNewMovies] = useState<Array<Teste>>([]);
   const carrossel = useRef<HTMLDivElement>(null);
+  /*
   const [scroll, setScroll] = useState(0);
   const [intervalo, setIntervalo] = useState();
+  */
 
   async function conteudo(moviesURL: string) {
     const api = await fetch(moviesURL);
