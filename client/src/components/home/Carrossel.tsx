@@ -16,11 +16,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
 const Carrossel = () => {
   const [newMovies, setNewMovies] = useState<Array<Teste>>([]);
   const carrossel = useRef<HTMLDivElement>(null);
-  /*
-  const [scroll, setScroll] = useState(0);
-  const [intervalo, setIntervalo] = useState();
-  */
-
+ 
   async function conteudo(moviesURL: string) {
     const api = await fetch(moviesURL);
     const json = await api.json();
@@ -52,27 +48,7 @@ const Carrossel = () => {
     conteudo(urlFull);
   }, []);
 
-  /*
-  useEffect(() => {
-    let time = 0;
-
-    if (carrossel.current!.scrollLeft == 0) {
-      time = 2000;
-    } else {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      time = 4000;
-    }
-
-    let teste = setTimeout(() => {
-      setScroll(scroll + 1);
-      console.log(teste);
-      avancar();
-    }, time);
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scroll]);
-
-*/
+ 
 
   return (
     <div className="carrossel-principal" ref={carrossel}>
