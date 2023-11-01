@@ -1,15 +1,51 @@
 .carrossel-principal {
   width: 100%;
-  min-width: 100% ;
+  min-width: 100%;
   height: max-content;
   display: flex;
   justify-content: initial;
   align-items: center;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  transition: 0.8s all;
 }
 
-.carrossel-principal::-webkit-scrollbar{
+.carrossel-principal section{
+  min-width: 100%;
+}
+
+
+.carrossel-principal::-webkit-scrollbar {
+  display: none;
+}
+.arrow-right,
+.arrow-left {
+  width: 30px;
+  height: 60px;
+  background-color: #3c5a75;
+  position: absolute;
+  right: 20px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+  background-color: #22415c;
+}
+
+@media screen and (max-width: 850px) {
+  .arrow-right,
+  .arrow-left {
     display: none;
+  }
 }
-
