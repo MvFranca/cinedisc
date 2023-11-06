@@ -10,8 +10,10 @@
   transition: 0.8s all;
 }
 
-.carrossel-principal section{
+.carrossel-principal a, .carrossel-principal section{
+  cursor: pointer;
   min-width: 100%;
+  text-decoration: none;
 }
 
 

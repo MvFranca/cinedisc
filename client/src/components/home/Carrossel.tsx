@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import IconBxLeftArrow from "../../icons/IconArrowLeft";
 import IconBxRightArrow from "../../icons/IconArrowRight";
 import "../../styles/home/Carrossel.css";
@@ -7,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 interface Teste {
   overview: string;
   title: string;
+  id: string;
   backdrop_path: string;
 }
 
@@ -56,13 +58,15 @@ const Carrossel = () => {
 
       {newMovies.length > 0 &&
         newMovies.map((filme) => (
-          <section>
-            <CarrosselPrincipal
-              backdrop_path={filme.backdrop_path}
-              title={filme.title}
-              overview={filme.overview}
-            />
-          </section>
+          <Link to={`/${filme.id}`}>
+            <section>
+              <CarrosselPrincipal
+                backdrop_path={filme.backdrop_path}
+                title={filme.title}
+                overview={filme.overview}
+              />
+            </section>
+          </Link >
         ))}
       <div className="arrow-left" onClick={voltar}>
         <IconBxLeftArrow color="#fff" />
