@@ -8,6 +8,7 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   transition: 0.8s all;
+  scroll-behavior: smooth;
 }
 
 .carrossel-principal a, .carrossel-principal section{

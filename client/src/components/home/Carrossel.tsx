@@ -28,7 +28,6 @@ const Carrossel = () => {
   const avancar = () => {
 
     const teste = carrossel.current!.scrollWidth;
-
     
     if((teste - teste/newMovies.length) <= carrossel.current!.scrollLeft) return carrossel.current!.scrollLeft = 0
 

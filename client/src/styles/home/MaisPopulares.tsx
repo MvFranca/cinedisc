@@ -35,7 +35,10 @@ const MaisPopulares = () => {
   return (
     <div className="melhores-avaliados">
       <Titulo>Mais Populares</Titulo>
-      <CarrosselFilmes>
+      <CarrosselFilmes
+      popMovies = {popMovies
+      }
+      >
         {popMovies.length === 0 && <p>carregando...</p>}
 
         {popMovies.length > 0 &&
