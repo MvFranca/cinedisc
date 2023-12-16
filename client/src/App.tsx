@@ -1,14 +1,12 @@
-import Layout from "./components/layout/Layout";
+import { BrowserRouter } from "react-router-dom";
 import Rotas from "./routes/Routes";
 import "./styles/App.css";
 
 function App() {
   return (
-    <>
-      <Layout>
+      <BrowserRouter>
         <Rotas />
-      </Layout>
-    </>
+      </BrowserRouter>
   );
 }
 

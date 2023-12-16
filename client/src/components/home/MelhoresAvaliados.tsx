@@ -35,7 +35,7 @@ const MelhoresAvaliados = () => {
     <div className="melhores-avaliados">
       <Titulo>Melhores Avaliados</Titulo>
       <CarrosselFilmes 
-      topMovies={topMovies}
+      popMovies={topMovies}
       >
         {topMovies.length === 0 && <p>carregando...</p>}
 

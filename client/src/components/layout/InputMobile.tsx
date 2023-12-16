@@ -1,9 +1,17 @@
 import '../../styles/layout/InputMobile.css'
 
-const InputMobile = () => {
+interface types {
+    setSearch: () => {}
+    search: string
+}
+
+const InputMobile = ({setSearch, search}: types) => {
     return ( 
-        <div className="input-mobile">
-            <input type="text" placeholder="Pesquise algum filme..."/>
+        <div className="input-mobile" >
+            <input type="text" placeholder="Pesquise algum filme..." 
+            value={search}   
+            onChange={(e) => setSearch(e.currentTarget.value)}
+            />
         </div>
      );
 }

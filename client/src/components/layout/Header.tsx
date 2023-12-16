@@ -7,16 +7,22 @@ import IconSettings from "../../icons/IconSettings";
 import "../../styles/layout/Header.css";
 import HeaderMobile from "./HeaderMobile";
 import InputMobile from "./InputMobile";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [search, setSearch] = useState("");
   const [menu, setMenu] = useState(false);
   const [input, setInput] = useState(false);
 
+  const navigate = useNavigate()
+
   function handleSubmit() {
     event?.preventDefault();
 
     if (!search) return
+
+    navigate(`/search?q=${search}`)
+    setSearch("")
   }
 
   useEffect(() => {
@@ -65,8 +71,12 @@ const Header = () => {
             onChange={(e) => setSearch(e.currentTarget.value)}
           />
 
-          {input && <InputMobile />}
+          {input && <InputMobile 
+            search={search}
+            setSearch={setSearch}
+          />}
           <button
+          type="submit"
             onClick={() => {
               setInput(!input);
             }}
