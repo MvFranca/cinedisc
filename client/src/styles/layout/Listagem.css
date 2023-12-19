@@ -1,0 +1,16 @@
+.listagemFilmes{
+    padding: 80px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+    .listagemFilmes{
+        padding: 20px;
+
+    }
+}

@@ -2,7 +2,7 @@ import CarrosselFilmes from "./CarrosselFilmes";
 import Titulo from "../layout/Titulo";
 import "../../styles/home/MelhoresAvaliados.css";
 import CardFilme from "./CardFilme";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const moviesURL = import.meta.env.VITE_API;

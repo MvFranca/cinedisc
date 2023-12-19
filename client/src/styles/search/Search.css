@@ -10,6 +10,7 @@
 
 .search-page .titulo-search{
     width: 100%;
+    display: flex;
     justify-content: initial;
     align-items: center ;
 }
@@ -19,7 +20,43 @@
 }
 
 .search-page .carrosselFilmes{
-    justify-content: space-between;
+    justify-content: space-between  ;
     overflow-x: hidden;
     flex-wrap: wrap;
+    display: flex;
+}
+
+@media screen and (max-width: 950px) {
+    .search-page{
+        padding: 80px 20px;
+    }
+
+    .search-page .titulo-search{
+        max-width: 500px;
+    }
+
+    .search-page .carrosselFilmes{
+        justify-content: initial;
+ 
+    }
+
+    .search-page .conteudo-search{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 500px;
+        justify-content: center;
+        align-items: center ;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .search-page .conteudo-search,
+    .search-page .carrosselFilmes div,
+    .search-page .titulo-search{
+        width: 270px;
+    }
+
+
 }

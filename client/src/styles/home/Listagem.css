@@ -38,16 +38,48 @@
     border-bottom: 4px solid rgb(255, 0, 0);
     gap: 5px;
     margin-bottom: 50px;
+    transition: 0.2s all;
+}
+
+
+.escolha div:hover{
+    background-color: #2e4053;
+    cursor: pointer;
 }
 
 .escolha .generos{
     border-bottom: 4px solid #80808000;
 }
 
+.listagem .full-generos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.listagem .full-generos span{
+    border-radius: 10px;
+    background-color: #2e4053;
+    padding: 10px 20px;
+    transition: 0.3s all;
+}
+
+.listagem .full-generos span:hover{
+    background-color: #435b76;
+
+}
+
 .escolha div p{
     font-weight: bold;
 
 }
+
+
+
 
 @media screen and (max-width: 1060px) {
     .listagem{

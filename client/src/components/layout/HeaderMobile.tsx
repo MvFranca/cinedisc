@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import '../../styles/layout/HeaderMobile.css'
 
 const HeaderMobile = () => {
     return ( 
         <nav className="header-mobile">
-            <a href="/favoritos">Favoritos</a>
-            <a href="/salvo">Assistir Depois</a>
+            <Link to="/favoritos">Favoritos</Link>
+            <Link to="/assistirDepois">Assistir Depois</Link>
         </nav>
      );
 }

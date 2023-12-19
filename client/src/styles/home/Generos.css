@@ -1,0 +1,28 @@
+.full-generos{
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    padding: 0 80px;
+    margin-bottom: 80px;
+}
+
+.full-generos span{
+    border-radius: 10px;
+    background-color: #2e4053;
+    padding: 10px 20px;
+    transition: 0.3s all;
+}
+
+.full-generos span:hover{
+    background-color: #435b76;
+
+}
+
+.full-generos .listagemFilmes{
+    padding: 50px 0;
+}

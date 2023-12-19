@@ -41,28 +41,30 @@ const Search = () => {
 
     return ( 
         <div className="search-page">
-         
-         <div className="titulo-search">
-         <Titulo>Resultados para {query}:</Titulo>
-         </div>
-        
-        <section className='carrosselFilmes'>
-        {
-        
-        movies.length === 0 ? <p>carregando...</p>
-        :
-        movies.map((item, index) => (
-            <CardFilme
-            poster_path={item.poster_path}
-            title={item.title}
-            vote_average={item.vote_average}
-            id = {item.id}
-            key={index}
-            />
-        ))}
 
-        </section>
+        <div className="conteudo-search">
+            
+            <div className="titulo-search">
+            <Titulo>Resultados para {query}:</Titulo>
+            </div>
+            
+            <section className='carrosselFilmes'>
+            {
+            
+            movies.length === 0 ? <p>carregando...</p>
+            :
+            movies.map((item, index) => (
+                <CardFilme
+                poster_path={item.poster_path}
+                title={item.title}
+                vote_average={item.vote_average}
+                id = {item.id}
+                key={index}
+                />
+            ))}
 
+            </section>
+        </div> 
             
         </div>
      );

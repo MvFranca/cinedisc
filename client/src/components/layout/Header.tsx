@@ -7,7 +7,8 @@ import IconSettings from "../../icons/IconSettings";
 import "../../styles/layout/Header.css";
 import HeaderMobile from "./HeaderMobile";
 import InputMobile from "./InputMobile";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import IconBookmarkFill from "../../icons/IconBookMarkCheio";
 
 const Header = () => {
   const [search, setSearch] = useState("");
@@ -39,9 +40,9 @@ const Header = () => {
   return (
     <header className="cabecalho">
       <nav className="nav-desktop">
-        <a href="/">
+        <Link to="/">
           <img src="logo-cinedisc.png" alt="Logo CineDisc" />
-        </a>
+        </Link>
 
         <div
           className="icon-menu"
@@ -53,11 +54,14 @@ const Header = () => {
         </div>
 
         <div className="links-header">
-          <a href={"/favoritos"}>
+          <Link to={"/favoritos"}>
             <IconHeart width={25} height={25} color="#ff0000" />
             Favoritos
-          </a>
-          <a href={"/salvo"}>Assistir Depois</a>
+          </Link>
+          <Link to={"/assistirDepois"}>
+          <IconBookmarkFill width={19} height={18} />
+            Assistir Depois
+            </Link>
         </div>
       </nav>
 
