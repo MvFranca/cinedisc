@@ -3,7 +3,6 @@ import IconHeart from "../../icons/IconHeart";
 import IconMenu from "../../icons/IconMenu";
 
 import Icon135Search from "../../icons/IconSearch";
-import IconSettings from "../../icons/IconSettings";
 import "../../styles/layout/Header.css";
 import HeaderMobile from "./HeaderMobile";
 import InputMobile from "./InputMobile";
@@ -89,7 +88,6 @@ const Header = () => {
           </button>
         </form>
 
-        <IconSettings color="#aeaeae" className="icone-config" />
       </div>
       {menu && <HeaderMobile />}
     </header>

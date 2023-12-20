@@ -61,11 +61,12 @@ const Movie = () => {
 
               <div className="especificacoes">
                 <span className="generos">
-                  {categorias.map((categoria) => {
-                    if (categoria.id == categorias[categorias.length - 1].id)
+                  {categorias.map((categoria, index) => {
+                    if(index <= 2){
+                      if(index == 2 ||categoria.id == categorias[categorias.length - 1].id )
                       return <span>{categoria.name}</span>;
-
-                    return <span>{categoria.name}, </span>;
+                    
+                    return <span>{categoria.name}, </span>;}
                   })}
                 </span>
 
@@ -75,6 +76,9 @@ const Movie = () => {
                   <h4>Orçamento:</h4>
                   <span>US$ {movie.budget}</span>
                 </span>
+
+                <span className="pontos">•</span>
+
                 <span>
                   <h4>Receita:</h4>
                   <span>US$ {movie.revenue}</span>

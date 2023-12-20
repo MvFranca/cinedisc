@@ -6,8 +6,8 @@
   height: 50px;
 
   position: absolute;
-  top: 70px;
-  right: 80px;
+  top: 68px;
+  right: 20px;
 }
 
 .input-busca .input-mobile input {
@@ -24,7 +24,7 @@
 .input-busca .input-mobile input::placeholder {
   color: #ffffffb2;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 500px) {
   .input-busca .input-mobile {
     display: none;
   }

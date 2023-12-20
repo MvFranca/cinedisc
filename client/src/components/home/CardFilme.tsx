@@ -28,7 +28,7 @@ const CardFilme = ({vote_average, poster_path, title, id}: props) => {
   const [salvo, setSalvo] = useState(false)
 
   const {setFavoritos, favoritos, setMaisTarde, maisTarde} = useContext(pointContext)
-
+  const avaliacao = Number(vote_average).toFixed(2)
  
 
   useEffect(() => {
@@ -88,7 +88,7 @@ const CardFilme = ({vote_average, poster_path, title, id}: props) => {
     <div className="inform-filme">
       <span>
         <IconStar width={22} height={22} color="#9dff00" />
-        {vote_average}
+        {avaliacao}
       </span>
       <div>
 

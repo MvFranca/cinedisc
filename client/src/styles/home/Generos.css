@@ -26,3 +26,34 @@
 .full-generos .listagemFilmes{
     padding: 50px 0;
 }
+
+
+@media screen and (max-width: 1060px) {
+    .full-generos{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .full-generos span{
+
+        padding: 5px 10px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 950px) {
+    .full-generos{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .full-generos .listagemFilmes .card-filme{
+        max-width: 260px;
+    }
+
+}

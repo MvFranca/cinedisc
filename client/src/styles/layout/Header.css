@@ -88,7 +88,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 500px) {
   .cabecalho .busca {
     width: 15%;
     gap: 0;
@@ -105,6 +105,7 @@
     border-radius: 50%;
   }
 }
+
 @media screen and (max-width: 950px) {
   .cabecalho {
     padding: 0px 20px;

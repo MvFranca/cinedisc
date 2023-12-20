@@ -42,7 +42,7 @@ box-shadow: 5px 5px 15px 5px #00000041;
 }
 
 .movie-page .descricao-filme {
-  width: 50%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -53,6 +53,7 @@ box-shadow: 5px 5px 15px 5px #00000041;
   gap: 20px;
   align-items: center;
   margin-top: -10px;
+  flex-wrap: wrap;
 }
 
 .movie-page .especificacoes span {
@@ -82,7 +83,7 @@ box-shadow: 5px 5px 15px 5px #00000041;
   height: 100px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 950px) {
   .movie-page .imagem-menor {
     display: none;
   }
@@ -95,6 +96,7 @@ box-shadow: 5px 5px 15px 5px #00000041;
     justify-content: initial;
     align-items: end;
     height: 450px;
+
   }
 
   .movie-page .descricao-filme {
