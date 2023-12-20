@@ -11,13 +11,13 @@ interface Teste {
   }
   
 
+
 interface pontuacao {
 
   favoritos: Array<Teste>;
-  setFavoritos:  (valor: Array<Teste>) => void;
-
+  setFavoritos: ([]: any) => void;
   maisTarde: Array<Teste>;
-  setMaisTarde: (valor: Array<Teste>) => void;
+  setMaisTarde: ([]: any) => void;
 
 }
 

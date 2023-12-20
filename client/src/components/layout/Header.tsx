@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 import IconBookmarkFill from "../../icons/IconBookMarkCheio";
 
 const Header = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState<string>("");
   const [menu, setMenu] = useState(false);
   const [input, setInput] = useState(false);
 

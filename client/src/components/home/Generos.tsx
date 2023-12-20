@@ -1,7 +1,5 @@
 import '../../styles/home/Generos.css'
 import { useEffect, useState } from 'react';
-import CardFilme from './CardFilme';
-import Listagem from './Listagem';
 import ListagemFilmes from '../layout/Listagem';
 
 
@@ -34,7 +32,7 @@ function Generos () {
   
     }, [])
 
-    async function escolhaGenero(nome: string, id: string){
+    async function escolhaGenero(id: string){
         const api = (await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=6f31d3e83712370a49380bf91bdc6d43&with_genres=${id}&language=pt-BR`))
         const json = await api.json()
         setGeneroEscolhido(json.results)
@@ -49,7 +47,7 @@ function Generos () {
           genres[0] ?
           genres.map((item) => {
            return(
-            <span onClick={() => escolhaGenero(item.name, item.id)}>
+            <span onClick={() => escolhaGenero(item.id)}>
               {item.name}
             </span>
            ) 

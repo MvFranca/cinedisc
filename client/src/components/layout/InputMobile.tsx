@@ -1,7 +1,7 @@
 import '../../styles/layout/InputMobile.css'
 
 interface types {
-    setSearch: (valor: string) => {}
+    setSearch: (valor: string) => void
     search: string
 }
 

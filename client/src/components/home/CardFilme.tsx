@@ -8,11 +8,12 @@ import "../../styles/home/CardFilme.css";
 const imageUrl = import.meta.env.VITE_IMG   
 
 type props = {
-  poster_path: string;
-  title: string;
-  vote_average: string;
-  id: string;
+    poster_path: string;
+    title: string;
+    vote_average: string;
+    id: string;
 } 
+
 
 
 import { pointContext } from "../../context/context";
@@ -51,12 +52,13 @@ const CardFilme = ({vote_average, poster_path, title, id}: props) => {
     
     if(favoritado) {
       setFavoritado(false)
-      let newArray = favoritos.filter((item) => item.id !== id)
+      const newArray = favoritos.filter((item) => item.id !== id)
       setFavoritos(newArray)
       return
     } 
 
-    let newItem = {vote_average: vote_average, poster_path: poster_path, title: title, id: id}
+    const newItem= {vote_average: vote_average, poster_path: poster_path, title: title, id: id}
+    console.log(newItem)
     setFavoritos([...favoritos, newItem])
    
   }
