@@ -10,3 +10,9 @@
     box-shadow: 0px 0px 15px 5px #00000032;
     background-color: #1A242E;
 }
+
+@media screen and (min-height: 960px) {
+    .footer{
+        margin-top: 90px;    
+    }
+}

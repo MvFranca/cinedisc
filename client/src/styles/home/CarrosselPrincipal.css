@@ -67,6 +67,27 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+@media screen and (min-width: 1750px) {
+  .item-carrossel,.item-carrossel .imagem-carrossel  {
+   min-height: 700px;
+  }
+
+
+  .item-carrossel img {
+    min-width: 100%;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+
+.item-carrossel .imagem-carrossel img{
+  margin-top: 450px;
+}
+}
+
+
 @media screen and (max-width: 1060px) {
   .item-carrossel .imagem-carrossel {
     height: max-content;
