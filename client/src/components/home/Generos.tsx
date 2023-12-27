@@ -47,7 +47,7 @@ function Generos () {
           genres[0] ?
           genres.map((item) => {
            return(
-            <span onClick={() => escolhaGenero(item.id)}>
+            <span onClick={() => escolhaGenero(item.id)} key={item.id}>
               {item.name}
             </span>
            ) 

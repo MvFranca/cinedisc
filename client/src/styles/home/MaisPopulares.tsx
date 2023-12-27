@@ -48,6 +48,7 @@ const MaisPopulares = () => {
               title={filme.title}
               vote_average={filme.vote_average}
               id={filme.id}
+              key={filme.id}
             />
           ))}
       </CarrosselFilmes>

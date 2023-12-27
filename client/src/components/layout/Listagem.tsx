@@ -28,7 +28,8 @@ function ListagemFilmes({ lista, titulo }:props){
                         id={item.id}
                         poster_path={item.poster_path}
                         title={item.title}
-                        vote_average = {item.vote_average}                
+                        vote_average = {item.vote_average}  
+                        key={item.id}              
                     />
                     )
                 })

@@ -64,9 +64,9 @@ const Movie = () => {
                   {categorias.map((categoria, index) => {
                     if(index <= 2){
                       if(index == 2 ||categoria.id == categorias[categorias.length - 1].id )
-                      return <span>{categoria.name}</span>;
+                      return <span key={categoria.id}>{categoria.name}</span>;
                     
-                    return <span>{categoria.name}, </span>;}
+                    return <span key={categoria.id}>{categoria.name}, </span>;}
                   })}
                 </span>
 

@@ -51,12 +51,13 @@ const Carrossel = () => {
 
       {newMovies.length > 0 &&
         newMovies.map((filme) => (
-          <Link to={`/${filme.id}`}>
-            <section>
+          <Link to={`/${filme.id}`}  key={filme.id}>
+            <section >
               <CarrosselPrincipal
                 backdrop_path={filme.backdrop_path}
                 title={filme.title}
                 overview={filme.overview}
+            
               />
             </section>
           </Link >
