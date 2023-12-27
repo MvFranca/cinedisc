@@ -97,6 +97,11 @@
     min-width: 100%;
     transform: translateY(0);
   }
+
+  .item-carrossel .descricao-item-carrosel {
+  padding: 20px;
+
+  }
 }
 
 @media screen and (max-width: 850px) {

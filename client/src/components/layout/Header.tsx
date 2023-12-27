@@ -6,7 +6,7 @@ import Icon135Search from "../../icons/IconSearch";
 import "../../styles/layout/Header.css";
 import HeaderMobile from "./HeaderMobile";
 import InputMobile from "./InputMobile";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import IconBookmarkFill from "../../icons/IconBookMarkCheio";
 
 const Header = () => {
@@ -39,9 +39,9 @@ const Header = () => {
   return (
     <header className="cabecalho">
       <nav className="nav-desktop">
-        <Link to="/">
+        <NavLink to="/">
           <img src="logo-cinedisc.png" alt="Logo CineDisc" />
-        </Link>
+        </NavLink>
 
         <div
           className="icon-menu"
@@ -53,14 +53,14 @@ const Header = () => {
         </div>
 
         <div className="links-header">
-          <Link to={"/favoritos"}>
+          <NavLink to={"/favoritos"}>
             <IconHeart width={25} height={25} color="#ff0000" />
             Favoritos
-          </Link>
-          <Link to={"/assistirDepois"}>
+          </NavLink>
+          <NavLink to={"/assistirDepois"}>
           <IconBookmarkFill width={19} height={18} />
             Assistir Depois
-            </Link>
+            </NavLink>
         </div>
       </nav>
 

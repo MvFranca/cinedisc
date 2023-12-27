@@ -20,15 +20,21 @@ const CarrosselFilmes = ({children, popMovies}:props) => {
     const melhores = useRef<HTMLElement>(null)
     
     function avancar(){
-
-        const teste = melhores.current!.scrollWidth;
-        if((teste - teste/popMovies.length) <= melhores.current!.scrollLeft) return melhores.current!.scrollLeft = 0
-        melhores.current!.scrollLeft += teste / popMovies.length;
-        console.log(`Largura: ${teste - teste/popMovies.length}\nPosição Atual: ${melhores.current!.scrollLeft }`)
+        const largura = melhores.current!.scrollWidth;
+        melhores.current!.scrollLeft += largura / popMovies.length;
     }
 
+
+    function recuar(){
+
+        const largura = melhores.current!.scrollWidth;
+        melhores.current!.scrollLeft -= largura / popMovies.length;
+
+    }
+
+
     useEffect(() => {
-        console.log( melhores.current!.scrollWidth)
+
 
     }, [])
 
@@ -37,7 +43,7 @@ const CarrosselFilmes = ({children, popMovies}:props) => {
             {
                 children
             }
-              <div className="arrow-left" >
+              <div className="arrow-left"  onClick={recuar}>
             <IconBxLeftArrow color="#fff" />
           </div>
           <div className="arrow-right" onClick={avancar}>

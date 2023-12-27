@@ -27,20 +27,14 @@ const Carrossel = () => {
 
   const avancar = () => {
 
-    const teste = carrossel.current!.scrollWidth;
-    
-    if((teste - teste/newMovies.length) <= carrossel.current!.scrollLeft) return carrossel.current!.scrollLeft = 0
-
-    carrossel.current!.scrollLeft += teste / newMovies.length;
-
-    console.log(`Largura: ${teste - teste/newMovies.length}\nPosição Atual: ${carrossel.current!.scrollLeft }`)
+    const largura = carrossel.current!.scrollWidth;
+    carrossel.current!.scrollLeft += largura / newMovies.length;
 
   };
 
   const voltar = () => {
-    const teste = carrossel.current!.scrollWidth;
-
-    carrossel.current!.scrollLeft -= teste / newMovies.length;
+    const largura = carrossel.current!.scrollWidth
+    carrossel.current!.scrollLeft -= largura / newMovies.length;
   };
 
   useEffect(() => {

@@ -1,10 +1,10 @@
 .melhores-avaliados {
   display: flex;
   flex-direction: column;
-  padding: 30px 80px;
+  padding: 0px 80px;
   height: max-content;
   width: 100%;
-
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1060px) {

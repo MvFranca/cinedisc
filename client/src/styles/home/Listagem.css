@@ -37,7 +37,7 @@
     padding: 10px;
     border-bottom: 4px solid rgb(255, 0, 0);
     gap: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     transition: 0.2s all;
 }
 
@@ -93,18 +93,36 @@
         gap: 10px;
     }
 
-    .listagem div h2{
-        font-size: 1.3em;
-    }
-
-    .listagem div p{
-        font-size: 0.8em;
-       
-    }
-
 
     .escolha div{
         margin-top: 30px;
         margin-bottom: 10px;
     }
+}
+
+@media screen and (max-width: 850px) {
+
+    .listagem div h2{
+        font-size: 1.6em;
+    }
+
+    .listagem div p{
+        font-size: 1em;
+       
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .listagem div h2{
+        font-size: 1.3em;
+    }
+
+    .listagem div p{
+        font-size: 0.9em;
+       margin-top: 10px;
+    }
+
 }
